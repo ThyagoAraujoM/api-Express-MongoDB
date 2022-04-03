@@ -3,7 +3,6 @@ const app = express();
 
 app.use(express.json());
 
-require("./controllers/authController")(app);
-require("./controllers/projectController")(app);
+require("./app/controllers/index.js")(app);
 
 app.listen(3000);
